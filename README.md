@@ -51,7 +51,7 @@ http://localhost:8080/swagger-ui.html
 
 - Java 11 or later
 - Maven
-- MySQL
+- MySQL (to use other db such as H2 you'll need to add the dependencies in pom.xml and change application.properties connection)
 
 ### Setup
 
