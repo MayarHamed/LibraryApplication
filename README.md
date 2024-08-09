@@ -16,7 +16,13 @@ This is a Library Management System API built using Spring Boot. The system allo
 - **Patron**: Represents a library patron with attributes like ID, name, mobile, email, and address.
 - **BorrowingRecord**: Represents the borrowing relationship between a book and a patron, including borrow and return dates.
 
+
 ## API Endpoints
+
+### API Documentation
+
+Swagger UI
+http://localhost:8080/swagger-ui.html
 
 ### Book Management
 
