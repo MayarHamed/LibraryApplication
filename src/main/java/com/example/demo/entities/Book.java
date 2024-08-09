@@ -21,6 +21,8 @@ import lombok.NoArgsConstructor;
         @UniqueConstraint(name = "UQ_BOOK_ISBN", columnNames = {"ISBN"})
 })
 public class Book implements Serializable{
+	
+
 	/**
 	 * 
 	 */
@@ -41,4 +43,11 @@ public class Book implements Serializable{
 	
 	@Column(length = 13, nullable = false)
 	private String isbn;
+	
+	public Book(Long id, String title, String author, long publicationYear,String isbn) {
+		this.id=id;
+		this.title=title;
+		this.author=author;
+		this.publicationYear=publicationYear;
+	}
 }

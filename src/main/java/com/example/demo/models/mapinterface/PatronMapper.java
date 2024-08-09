@@ -5,6 +5,7 @@ import java.util.List;
 import org.mapstruct.Mapper;
 
 import com.example.demo.entities.Patron;
+import com.example.demo.models.request.PatronReqModel;
 import com.example.demo.models.response.PatronResModel;
 
 
@@ -13,5 +14,6 @@ public interface PatronMapper {
 	
 	PatronResModel mapToPatronResModel(Patron patron);
 	List<PatronResModel> mapToPatronResModelList(List<Patron> patron);
+	Patron mapPatronReqModelToPatron(PatronReqModel patronReqModel);
 
 }
