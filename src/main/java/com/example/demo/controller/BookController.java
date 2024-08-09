@@ -72,11 +72,8 @@ public class BookController {
 
 	@DeleteMapping(path = "/{id}")
 	public ResponseEntity<BookResModel> deleteBookById(@PathVariable("id") Long bookId) {
-		try {
 			bookService.deleteBookById(bookId);
-		} catch (Exception e) {
-			// TODO: handle exception
-		}
+	
 		return new ResponseEntity<>(HttpStatus.OK);
 	}
 }

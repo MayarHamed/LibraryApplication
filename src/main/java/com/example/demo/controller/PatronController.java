@@ -72,11 +72,8 @@ public class PatronController {
 
 	@DeleteMapping(path = "/{id}")
 	public ResponseEntity<PatronResModel> deletePatronById(@PathVariable("id") Long patronId) {
-		try {
 			patronService.deletePatronById(patronId);
-		} catch (Exception e) {
-			// TODO: handle exception
-		}
+	
 		return new ResponseEntity<>(HttpStatus.OK);
 	}
 }
